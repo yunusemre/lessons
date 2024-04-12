@@ -51,7 +51,7 @@ import { type Action, type ThunkAction, configureStore } from '@reduxjs/toolkit'
 import { persistReducer, persistStore } from 'redux-persist';
 
 const persistConfig = {
-    key: 'defineX',
+    key: 'project',
     storage,
     whitelist: ['apps'],
 };
@@ -69,11 +69,17 @@ export const persistor = persistStore(store);
 export type AppDispatch = typeof store.dispatch;
 export type RootState = ReturnType<typeof store.getState>;
 export type AppThunk<ReturnType> = ThunkAction<ReturnType, RootState, unknown, Action<string>>;
-
 ```
-
 ```
+import { AppDispatch, RootState } from '@/store';
+import { type TypedUseSelectorHook, useDispatch, useSelector } from 'react-redux';
 
+
+// hook kısmına bunu ekleyebiliriz. Bununla birlikte app'in state kısmına daha kolay erişebiliriz.
+export const useAppDispatch = () => useDispatch<AppDispatch>();
+export const useAppSelector: TypedUseSelectorHook<RootState> = useSelector;
+```
+```
 <Provider store={store}>
     <PersistGate persistor={persistor}>
         {...}
