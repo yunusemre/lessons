@@ -1,4 +1,4 @@
-`useState`
+useState
 
 1- Component içerisinde data tutmaya yarar.
 2- Condition içersinde kullanılmaz.
