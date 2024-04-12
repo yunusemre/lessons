@@ -1,0 +1,3 @@
+-   useLayoutEffect => Dom oluşmadan önce çalışır. componentWillMount gibi çalışır.
+-   useDeferredValue => Bekleme işlemi için kullanılabilir. input değerini girdiğiniz zaman bir süre beklemesi gibi.
+-   useId => Input ve label aksiyonu için oluşturulmuştur. Id ihtiyacı için değildir.
