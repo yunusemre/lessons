@@ -1,0 +1,15 @@
+Bir proje oluştururken ne yapılabilir?
+
+-   Git kurabiliriz ki kodumuzu bir yerde saklayalım
+-   Çoklu sayfa yapılacaksa bir router kullanabilir.
+-   Projenin yapısına göre datayı saklamak için bir yapı kurgulayabiliriz.
+-   Form için bir kütüphane kullanabiliriz ya da kendimiz yapabiliriz.
+-   Tema bulabiliriz. Responsive mi değil mi bunu seçebiliriz.
+-   Yapılacak işin tasarımı varsa onu tema haline getirebilir ya da uygun bir ui template seçebiliriz (https://npmtrends.com/@material-ui/core-vs-antd-vs-react-bootstrap) (react-bootstrap)
+-   Yapılacak şey biraz belirginse onunla ilgili componentleri hazırlayabiliriz. (datepicker, accordion, card, button v.s.)
+-   Notificationlar için hazırlık yapabiliriz.
+-   UX konusunda bir pattern kullanabiliriz.
+-   React kullanıyorsak ve requestler için bir kütüphane kullanabilir ya da fetch kütüphanesini ihtiyacımıza göre iyileştirebiliriz.
+-   Eğer kullanılacaksa para birimleri olabilir ya da tarihlerle alakalı çeviricler kullanabiliriz.
+-   Temaya uygun bir font kütüphanesi seçebiliriz.
+-   Dosya yapısını ayarlayabiliriz. Dosya isimlerinin tipini pascalCase, (camelCase: js için tavsie edelen), uppercase, Snake Case(NUMBER_OF_DONUTS: sabit değişkenleri tanımlamak için tavsiye edilen), sanek-case
