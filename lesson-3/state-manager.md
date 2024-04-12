@@ -70,6 +70,8 @@ export type AppDispatch = typeof store.dispatch;
 export type RootState = ReturnType<typeof store.getState>;
 export type AppThunk<ReturnType> = ThunkAction<ReturnType, RootState, unknown, Action<string>>;
 ```
+hooks;
+
 ```
 import { AppDispatch, RootState } from '@/store';
 import { type TypedUseSelectorHook, useDispatch, useSelector } from 'react-redux';
@@ -79,6 +81,8 @@ import { type TypedUseSelectorHook, useDispatch, useSelector } from 'react-redux
 export const useAppDispatch = () => useDispatch<AppDispatch>();
 export const useAppSelector: TypedUseSelectorHook<RootState> = useSelector;
 ```
+
+app.tsx/app.js içerisine;
 ```
 <Provider store={store}>
     <PersistGate persistor={persistor}>
