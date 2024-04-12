@@ -1,21 +1,21 @@
-React form
+`React form`
 
 Kütüphane olarak react-hook-form, redux-form, formik var. Ben react-hook-form kullanıyorum genel olarak.
 
 ```
 const {
-        register,
-        handleSubmit,
-        watch,
-        formState: { errors },
-    } = useForm({
-        defaultValues: {
-            firstName: "",
-            lastName: "",
-        },
-    });
+register,
+handleSubmit,
+watch,
+formState: { errors },
+} = useForm({
+  defaultValues: {
+    firstName: "",
+    lastName: "",
+  },
+});
 
-    const onSubmit = (data) => console.log(data);
+const onSubmit = (data) => console.log(data);
 ```
 
 Form validasyonu içinde yup kütüphanesi
