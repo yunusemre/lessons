@@ -1,7 +1,6 @@
-useState
+`useState`
 
-1- Component içerisinde data tutmaya yarar.
-2- Condition içersinde kullanılmaz.
+Component içerisinde data tutmaya yarar. Condition içersinde kullanılmaz.
 
 ```
 const [count, setCount] = useState(1);
